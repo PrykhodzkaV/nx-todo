@@ -103,3 +103,5 @@ buck-out/
 
 
 apps/mob-e2e/artifacts
+
+.env

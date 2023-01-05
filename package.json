@@ -2,9 +2,13 @@
   "name": "nx-todo",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.7.3",
+    "@apollo/server": "^4.3.0",
     "apollo-server-express": "^3.11.1",
     "core-js": "^3.6.5",
     "express": "^4.18.1",
@@ -22,6 +26,10 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
+    "@graphql-codegen/cli": "^2.16.2",
+    "@graphql-codegen/client-preset": "1.2.4",
+    "@graphql-codegen/typescript-operations": "^2.5.11",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
     "@nrwl/cypress": "15.4.2",
     "@nrwl/detox": "15.4.2",
     "@nrwl/eslint-plugin-nx": "15.4.2",
@@ -46,7 +54,7 @@
     "@testing-library/react-native": "11.5.0",
     "@types/express": "4.17.13",
     "@types/jest": "28.1.1",
-    "@types/node": "18.7.1",
+    "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "@types/react-native": "0.70.6",
@@ -75,6 +83,7 @@
     "nx": "15.4.2",
     "prettier": "^2.6.2",
     "react-native-config": "1.4.11",
+    "react-native-dotenv": "^3.4.7",
     "react-native-svg": "13.6.0",
     "react-native-svg-transformer": "1.0.0",
     "react-refresh": "^0.10.0",

@@ -16,5 +16,5 @@
     "src/**/*.test.jsx",
     "src/**/*.spec.jsx",
     "src/**/*.d.ts"
-, "../../libs/todo-feature-lib/src/lib/env.d.ts"  ]
+, "../../env.d.ts"  ]
 }
